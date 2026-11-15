@@ -164,4 +164,4 @@ juce::AudioProcessorEditor* RitualAudioProcessor::createEditor()
 {
     return new RitualAudioProcessorEditor(*this);
 }
-}
+
