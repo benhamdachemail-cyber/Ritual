@@ -158,6 +158,7 @@ void RitualAudioProcessor::setStateInformation(const void* data, int size)
 juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
 {
     return new RitualAudioProcessor();
+    }
 
 juce::AudioProcessorEditor* RitualAudioProcessor::createEditor()
 {
