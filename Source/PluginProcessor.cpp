@@ -23,7 +23,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout RitualAudioProcessor::makeLa
     juce::AudioProcessorValueTreeState::ParameterLayout result;
     for (const auto& p : std::array<std::pair<const char*, const char*>, 6> {{
          {"reverse", "Reverse"}, {"halftime", "Half Time"}, {"triplet", "Triplet"},
-         {"phase", "Phase Shift"}, {"flux", "Flux"}, {"aperture", "Aperture"}})
+{"phase", "Phase Shift"}, {"flux", "Flux"}, {"aperture", "Aperture"}}})
     {
         result.add(std::make_unique<juce::AudioParameterFloat>(
             juce::ParameterID { p.first, 1 }, p.second,
